@@ -1,12 +1,14 @@
-const button = document.getElementById('generate')
+function gerar() {
 
-button.addEventListener('click', function() {
+    var min = parseInt(document.getElementById("value-min").value)
+    var max = parseInt(document.getElementById("value-max").value)
 
-    const min = parseInt(document.getElementById("min").value)
+    const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min
+          
+    document.getElementById("result").innerHTML = randomNumber
+    
+}
 
-    const max = parseInt(document.getElementById("max").value)
+const button = document.querySelector("button")
 
-    let result = Math.floor(Math.random() * (max - min + 1) + min)
-
-    document.querySelector('#result > span').textContent = result
-})
+button.addEventListener('click', gerar)
