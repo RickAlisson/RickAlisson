@@ -1,1 +1,99 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+* {
+    font-family: Poppins;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    background: url("../698623.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.container {
+    background: rgba( 255, 255, 255, 0.13 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.25 );
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    border-radius: 10px;
+    width: 75vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    display: flex;
+    width: 50%;
+}
+
+input[type=number] {
+    padding: 20px;
+    border-color: white;
+    background-color: transparent;
+    height: 20px;
+    width: 50vw;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 1.5px solid white;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+input[type=number]::placeholder{
+    color: white;
+    
+}
+
+input[type=number]:focus {
+    border: 1.5px solid white;
+    outline: 0;
+    border-radius: 3px;
+}
+
+#confirm {
+    display: flex;
+    padding: 10px;
+    margin: 20px;
+    width: 50vw;
+    color: #4f4878;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+value {
+    color: transparent;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 45px;
+    font-weight: bold;
+}
