@@ -1,58 +1,33 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-
-  <meta charset="UTF-8">
-
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="assets/css/large.css">
-
-  <link rel="stylesheet" href="assets/css/small.css">
-
-  <title>Adivinhe o Número</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Gerador de números</title>
 </head>
 
 <body>
-
-  <div class="container">
-
-    <h2>Advinhe o Número</h2>
-
-    <div class="input-group">
-
-      <div class="input-field">
-
-        <label for="min">Digite seu número:</label>
-
-        <input type="number" name="min" id="min">
-
-      </div>
-
-    </div>
-
-    <button id="generate">Confirmar</button>
-
-    <div id="result">
-      
-      <span>
-
-        00
+    <div class="container">
+        <h1>Gerador <br> de Números</h1>
+        <div class="input-group">
+            <div class="input-field" id="min">
+                <input type="number" id="value-min"placeholder="Min">
+            </div>
+            <div class="input-field" id="max">
+                <input type="number" id="value-max" placeholder="Max">
+            </div>
+             <p id="result">
+            
+            </p>
+            <button id="confirm" class="confirm">
+                Confirmar
+            </button>
+        </div>
         
-      </span>
-    
     </div>
-
-  </div>
-
-  <script src="assets/js/script.js">
-
-  </script>
-
-  <a href=""></a>
 </body>
+    <script src="script.js" defer>
+        
+    </script>
 </html>
